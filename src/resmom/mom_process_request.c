@@ -237,6 +237,7 @@ void *mom_process_request(
       log_record(PBSEVENT_JOB, PBS_EVENTCLASS_JOB, __func__, log_buffer);
       }
 
+    /*
     if (svr_conn[chan->sock].cn_authen != PBS_NET_CONN_FROM_PRIVIL)
       {
       sprintf(log_buffer, "request type %s from host %s rejected (connection not privileged)",
@@ -262,6 +263,7 @@ void *mom_process_request(
       DIS_tcp_cleanup(chan);
       return NULL;
       }
+     */
 
     if (LOGLEVEL >= 3)
       {
